@@ -38,7 +38,6 @@ class ProductController {
     }
 
     @PUT
-    @Path("/{id}")
     @Transactional
     fun changeProduct(@PathParam("id") id: Long, productDTO: ProductDTO): Response {
         try {
